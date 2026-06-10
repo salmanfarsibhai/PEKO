@@ -321,7 +321,7 @@
             input.value = '';
             updateStatus(true, '🟡 প্রক্রিয়াকরণ...');
 
-            const SERVER_URL = await getServerUrl();
+            const SERVER_URL = 'http://192.168.0.103:5000/chat';
 
             if (!SERVER_URL) {
                 addMessage('😞 সার্ভারে সংযোগ করতে পারছি না। নিশ্চিত করুন আপনার কম্পিউটারে `python ai_server.py` চালু আছে!', 'ai');
